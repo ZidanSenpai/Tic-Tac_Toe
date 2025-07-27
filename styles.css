@@ -9,19 +9,19 @@ body{
 }
 .container{
     display: flex;
-    height: 70vh;
-    width: 70vw;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 80vh;
+    min-width: 70vw;
 }
 .game-board{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 15px;
-    height: 50vh;
-    width: 50vw;
+    min-height: 50vh;
+    min-width: 50vw;
 }
 .box{
     border: none;
