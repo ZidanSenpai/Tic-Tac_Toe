@@ -1,4 +1,5 @@
 const boxes = document.querySelectorAll(".box");
+const resetbtn = document.getElementById("reset");
 let turnO = false;
 let turnX = true;
 function createPlayer(){
@@ -43,7 +44,20 @@ boxes.forEach((box)=>{
     
 })
 const checkWinner = () =>{
-    for(pattern in gameBoard.winPatterns){
-        console.log(pattern)
+    for(let pattern of gameBoard.winPatterns){
+        let pos1Val = boxes[pattern[0]].innerText;
+        let pos2Val = boxes[pattern[1]].innerText;
+        let pos3Val = boxes[pattern[2]].innerText;
+        if(pos1Val != "" && pos2Val != "" && pos3Val != ""){
+            if(pos1Val === pos2Val && pos2Val === pos3Val){
+                console.log("winner");
+            }
+        }
     }
 }
+resetbtn.addEventListener("click", ()=>{
+    boxes.forEach((box)=>{
+        box.textContent = "";
+        box.disabled = false;
+    })
+})
