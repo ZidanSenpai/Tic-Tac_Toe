@@ -32,3 +32,19 @@ body{
     background: #FFB20F;
     color: #FF4B3E;
 }
+h1{
+    font-size: 52px;
+    color: #FF4B3E;
+    margin-bottom: 20px;
+}
+#reset{
+    border: none;
+    box-shadow: 0 10 10 rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    background: #FF4B3E;
+    color: #FFE548;
+    padding: 20px 40px;
+    margin-top: 40px;
+}
