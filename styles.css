@@ -48,3 +48,18 @@ h1{
     padding: 20px 40px;
     margin-top: 40px;
 }
+.hide{
+    display: none;
+}
+.scoreboard {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #FFE548;
+    display: flex;
+    gap: 40px;
+}
+#winnerDisplay h2 {
+    color: #FFE548;
+    margin-top: 20px;
+    font-size: 36px;
+}
